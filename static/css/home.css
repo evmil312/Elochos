@@ -1,0 +1,10 @@
+@import url("base.css");
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+/* CSS específico para la página de inicio */
+
+/* Puedes añadir estilos únicos para index.html aquí. */

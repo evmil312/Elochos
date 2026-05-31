@@ -1,0 +1,23 @@
+<svg width="100%" viewBox="-40 0 777.12 200" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" style="">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">ELOCHOS texto estilo logo</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Texto ELOCHOS con estilo de logo naranja con contorno oscuro</desc>
+  <defs>
+    
+  </defs>
+
+  <!-- Shadow layer -->
+  <text x="364" y="106" fill="#3a1a00" opacity="0.5" transform="translate(4,6)" style="fill:rgb(58, 26, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Luckiest Guy&quot;, &quot;Arial Black&quot;, sans-serif;font-size:130px;font-weight:400;text-anchor:middle;dominant-baseline:middle">ELOCHOS</text>
+
+  <!-- Dark outline layer (thick stroke) -->
+  <text x="360" y="100" fill="none" stroke="#3a1500" stroke-width="18" stroke-linejoin="round" paint-order="stroke" style="fill:none;stroke:rgb(58, 21, 0);color:rgb(255, 255, 255);stroke-width:18px;stroke-linecap:butt;stroke-linejoin:round;opacity:1;font-family:&quot;Luckiest Guy&quot;, &quot;Arial Black&quot;, sans-serif;font-size:130px;font-weight:400;text-anchor:middle;dominant-baseline:middle">ELOCHOS</text>
+
+  <!-- Bottom orange fill -->
+  <text x="360" y="100" fill="#c94400" style="fill:rgb(201, 68, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Luckiest Guy&quot;, &quot;Arial Black&quot;, sans-serif;font-size:130px;font-weight:400;text-anchor:middle;dominant-baseline:middle">ELOCHOS</text>
+
+  <!-- Top yellow-orange gradient simulation -->
+  <text x="360" y="100" fill="#ffcc00" opacity="0.85" style="fill:rgb(255, 204, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Luckiest Guy&quot;, &quot;Arial Black&quot;, sans-serif;font-size:130px;font-weight:400;text-anchor:middle;dominant-baseline:middle">ELOCHOS</text>
+
+  <!-- Highlight top shine -->
+  <text x="360" y="100" fill="none" stroke="#ffe680" stroke-width="2" stroke-linejoin="round" opacity="0.4" style="fill:none;stroke:rgb(255, 230, 128);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;opacity:0.4;font-family:&quot;Luckiest Guy&quot;, &quot;Arial Black&quot;, sans-serif;font-size:130px;font-weight:400;text-anchor:middle;dominant-baseline:middle">ELOCHOS</text>
+
+</svg>

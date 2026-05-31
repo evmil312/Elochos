@@ -1,0 +1,137 @@
+@import url("base.css");
+
+/* CSS específico para la página de historia */
+
+.page-content > .section-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 2rem;
+}
+
+.page-content > .section-heading p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Puedes añadir estilos únicos para historia.html aquí. */
+
+/* Estilos para la sección de stickers */
+.stickers-section {
+	padding: 2rem 1rem;
+}
+.stickers-section .stickers-content {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.stickers-section .stickers-image img {
+	max-width: 200px;
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	object-fit: cover;
+	display: block;
+}
+
+.sticker-form input[type="text"],
+.sticker-form textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.5rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.75rem;
+}
+.stickers-section {
+	padding: 2.5rem 1rem;
+	text-align: left;
+}
+.stickers-section h2 {
+	margin-bottom: 1rem;
+}
+.stickers-section .stickers-content {
+	display: flex;
+	gap: 1.25rem;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.stickers-section .stickers-image {
+	flex: 0 0 360px;
+	margin-right: 1.5rem;
+}
+.stickers-section .stickers-image img {
+	max-width: 360px;
+	width: 100%;
+	height: auto;
+	border-radius: 14px;
+	object-fit: cover;
+	display: block;
+}
+.stickers-section .stickers-info {
+	flex: 1 1 0;
+	max-width: 520px;
+	text-align: left;
+}
+.sticker-form input[type="text"],
+.sticker-form textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.5rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.75rem;
+}
+.sticker-form button {
+	padding: 0.5rem 0.75rem;
+	cursor: pointer;
+    background-color: #ec8d0f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-feedback {
+  min-height: 1.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.form-feedback.error,
+.form-feedback.success {
+  opacity: 1;
+  animation: fadeInUp 0.35s ease-out;
+}
+
+.form-feedback.error {
+  color: #c82333;
+}
+
+.form-feedback.success {
+  color: #1f7a24;
+}
+
+.input-error {
+  border: 1px solid #c82333;
+}
+
+@media (min-width: 900px) {
+	.stickers-section .stickers-content {
+		align-items: center;
+		justify-content: flex-start;
+	}
+}
