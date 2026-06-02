@@ -11,6 +11,84 @@
 .page-content > .section-heading p {
   text-align: center;
   margin-bottom: 1.8rem;
+  color: var(--muted);
+}
+
+.map-container {
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  max-width: 1020px;
+}
+
+.map-card {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(236, 141, 15, 0.16);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  right: auto;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(236, 141, 15, 0.16);
+  border-radius: 22px;
+  padding: 22px 24px;
+  box-shadow: 0 14px 40px rgba(22, 18, 14, 0.08);
+  max-width: 420px;
+}
+
+.map-overlay h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.map-overlay p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.map-frame {
+  width: 100%;
+  min-height: 450px;
+  border: 0;
+  display: block;
+}
+
+.address {
+  text-align: center;
+  padding: 26px 22px 28px;
+}
+
+.address p {
+  margin: 0.75rem 0;
+  color: var(--muted);
+}
+
+.address a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .map-overlay {
+    position: static;
+    margin: 16px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .map-frame {
+    min-height: 320px;
+  }
 }
 
 /* Puedes añadir estilos únicos para ubicacion.html aquí. */

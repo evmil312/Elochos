@@ -17,13 +17,16 @@
         <p>Elotes con historia.</p>
       </div>
     </div>
-    <nav class="site-nav">
+    <nav id="site-menu" class="site-nav nav-links" aria-label="Menú principal">
       <a href="../index.html">Inicio</a>
       <a href="productos.html">Productos</a>
       <a href="historia.html" class="active">Nuestra historia</a>
       <a href="ubicacion.html">Ubicación</a>
       <a href="contacto.html">Contacto</a>
     </nav>
+    <button class="hamburger" aria-expanded="false" aria-controls="site-menu" aria-label="Abrir menú desplegable">
+      <span>Menú desplegable</span>
+    </button>
   </header>
 
   <main class="page-content">
@@ -137,7 +140,7 @@ Representa un símbolo de la nostalgia al recordar la infancia que tuvimos al co
       <p class="footer-note">© 2026 Elochos. El sabor de la fama.</p>
     </div>
   </footer>
-</footer>
+  <script src="../static/js/menu.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {

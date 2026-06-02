@@ -17,13 +17,16 @@
         <p>Sabores que inspiran.</p>
       </div>
     </div>
-    <nav class="site-nav">
+    <nav id="site-menu" class="site-nav nav-links" aria-label="Menú principal">
       <a href="../index.html">Inicio</a>
       <a href="productos.html" class="active">Productos</a>
       <a href="historia.html">Nuestra historia</a>
       <a href="ubicacion.html">Ubicación</a>
       <a href="contacto.html">Contacto</a>
     </nav>
+    <button class="hamburger" aria-expanded="false" aria-controls="site-menu" aria-label="Abrir menú desplegable">
+      <span>Menú desplegable</span>
+    </button>
   </header>
 
   <main class="page-content">
@@ -220,5 +223,6 @@
       <p class="footer-note">© 2026 Elochos. El sabor de la fama.</p>
     </div>
   </footer>
+  <script src="../static/js/menu.js"></script>
 </body>
 </html>

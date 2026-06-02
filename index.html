@@ -17,27 +17,89 @@
         <p>El sabor de la fama en cada grano.</p>
       </div>
     </div>
-    <nav class="site-nav">
+    <nav id="site-menu" class="site-nav nav-links" aria-label="Menú principal">
       <a href="index.html" class="active">Inicio</a>
       <a href="templates/productos.html">Productos</a>
       <a href="templates/historia.html">Nuestra historia</a>
       <a href="templates/ubicacion.html">Ubicación</a>
       <a href="templates/contacto.html">Contacto</a>
     </nav>
+    <button class="hamburger" aria-expanded="false" aria-controls="site-menu" aria-label="Abrir menú desplegable">
+      <span>Menú desplegable</span>
+    </button>
   </header>
 
   <main class="page-content">
     <section class="hero">
-      <div>
+      <div class="hero-copy">
         <p class="eyebrow">Bienvenido a Elochos</p>
         <h2>Sabrosos elotes para disfrutar en cada bocado</h2>
-        <p>Descubre nuestro menú mínimo, ingredientes frescos y una experiencia auténtica de elotes mexicanos.
-        </p>
-        <a class="button" href="templates/productos.html">Ver productos</a>
+        <p>Descubre nuestro menú mínimo, ingredientes frescos y una experiencia auténtica de elotes mexicanos con un estilo moderno y callejero.</p>
+        <div class="hero-actions">
+          <a class="button" href="templates/productos.html">Ver productos</a>
+          <a class="button secondary" href="templates/contacto.html">Contacto rápido</a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-pill">Ingredientes locales</div>
+          <div class="highlight-pill">Salsa casera</div>
+          <div class="highlight-pill">Envío express</div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-label">Favorito del mes</span>
+          <p>Cheelochos con salsa cremosa y stickers exclusivos para tu vaso.</p>
+        </div>
       </div>
-      <img src="static/img/productos/tresproductos.jpeg" alt="Elote Elochito" />
+      <div class="hero-media">
+        <img src="static/img/productos/tresproductos.jpeg" alt="Elote Elochito" />
+        <div class="hero-stats">
+          <div>
+            <strong>4.9/5</strong>
+            <span>Reseñas top</span>
+          </div>
+          <div>
+            <strong>+ 1,200</strong>
+            <span>clients felices</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Pedidos express</span>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <section class="section-heading">
+      <p class="eyebrow">¿Por qué elegirnos?</p>
+      <h2>Un sabor auténtico, presentación premium y servicio rápido.</h2>
+      <p>En Elochos mezclamos tradición mexicana con un look fresco para que tu visita sea memorable desde el primer instante.</p>
+    </section>
+
+    <section class="feature-grid">
+      <article>
+        <span class="feature-icon">🌽</span>
+        <h3>Clásicos renovados</h3>
+        <p>Elotes preparados con combinaciones creativas que conservan la esencia de la calle.</p>
+      </article>
+      <article>
+        <span class="feature-icon">🔥</span>
+        <h3>Salsas premium</h3>
+        <p>Salsas hechas en casa con ingredientes frescos y el punto perfecto de picante.</p>
+      </article>
+      <article>
+        <span class="feature-icon">✨</span>
+        <h3>Servicio con estilo</h3>
+        <p>Presentación cuidada, entrega rápida y una experiencia visual que destaca en cada plato.</p>
+      </article>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <p>Disfruta el verdadero elote con sabor único, justo al ritmo de tu día.</p>
+        <a class="button alt" href="templates/productos.html">Ordena ahora</a>
+      </div>
+    </section>
+    
     <section class="summary-grid">
       <article>
         <h3>Productos selectos</h3>
@@ -45,7 +107,7 @@
       </article>
       <article>
         <h3>Experiencia y servicio</h3>
-        <p>Nosotros no solo brindamos sabor, sino tambien una experiencia inolvidable y un excelente servicio para cada cliente.</p>
+        <p>No solo brindamos sabor, sino una experiencia inolvidable y un servicio con actitud profesional.</p>
       </article>
       <article>
         <h3>Hecho con orgullo</h3>
@@ -110,5 +172,6 @@
       <p class="footer-note">© 2026 Elochos. El sabor de la fama en cada grano.</p>
     </div>
   </footer>
+  <script src="static/js/menu.js"></script>
 </body>
 </html>

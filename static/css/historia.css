@@ -6,101 +6,166 @@
   text-align: center;
   max-width: 760px;
   margin: 0 auto 2rem;
+  padding: 28px 24px;
+  background: rgba(236, 141, 15, 0.08);
+  border: 1px solid rgba(236, 141, 15, 0.16);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.page-content > .section-heading h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(2.1rem, 3.2vw, 2.8rem);
+  line-height: 1.05;
 }
 
 .page-content > .section-heading p {
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
-/* Puedes añadir estilos únicos para historia.html aquí. */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
 
-/* Estilos para la sección de stickers */
+.story-grid article {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(236, 141, 15, 0.16);
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-grid article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 32px 80px rgba(22, 18, 14, 0.12);
+}
+
+.story-grid h3 {
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+}
+
+.story-grid article p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.image-panel {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 36px;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.image-panel img {
+  width: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+  min-height: 340px;
+  box-shadow: 0 28px 70px rgba(22, 18, 14, 0.1);
+}
+
+.image-panel div {
+  display: grid;
+  gap: 18px;
+}
+
+.image-panel h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.image-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
 .stickers-section {
-	padding: 2rem 1rem;
-}
-.stickers-section .stickers-content {
-	display: flex;
-	gap: 1rem;
-	align-items: center;
-	flex-wrap: wrap;
-}
-.stickers-section .stickers-image img {
-	max-width: 200px;
-	width: 100%;
-	height: auto;
-	border-radius: 12px;
-	object-fit: cover;
-	display: block;
+  margin-top: 40px;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(236, 141, 15, 0.16);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
 }
 
-.sticker-form input[type="text"],
-.sticker-form textarea {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0.5rem;
-	margin-top: 0.25rem;
-	margin-bottom: 0.75rem;
-}
-.stickers-section {
-	padding: 2.5rem 1rem;
-	text-align: left;
-}
 .stickers-section h2 {
-	margin-bottom: 1rem;
-}
-.stickers-section .stickers-content {
-	display: flex;
-	gap: 1.25rem;
-	align-items: center;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-}
-.stickers-section .stickers-image {
-	flex: 0 0 360px;
-	margin-right: 1.5rem;
-}
-.stickers-section .stickers-image img {
-	max-width: 360px;
-	width: 100%;
-	height: auto;
-	border-radius: 14px;
-	object-fit: cover;
-	display: block;
-}
-.stickers-section .stickers-info {
-	flex: 1 1 0;
-	max-width: 520px;
-	text-align: left;
-}
-.sticker-form input[type="text"],
-.sticker-form textarea {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0.5rem;
-	margin-top: 0.25rem;
-	margin-bottom: 0.75rem;
-}
-.sticker-form button {
-	padding: 0.5rem 0.75rem;
-	cursor: pointer;
-    background-color: #ec8d0f;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  margin-top: 0;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.stickers-section p {
+  color: var(--muted);
+  max-width: 680px;
+}
+
+.stickers-content {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(380px, 1.3fr);
+  gap: 24px;
+  align-items: start;
+  margin-top: 24px;
+}
+
+.stickers-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(22, 18, 14, 0.12);
+}
+
+.stickers-info {
+  display: grid;
+  gap: 18px;
+}
+
+.stickers-info p {
+  margin: 0;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.sticker-form {
+  display: grid;
+  gap: 14px;
+}
+
+.sticker-form input[type="text"],
+.sticker-form textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fff;
+  resize: vertical;
+}
+
+.sticker-form button {
+  width: max-content;
+  padding: 0.85rem 1.25rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.sticker-form button:hover {
+  background: rgba(236, 141, 15, 0.95);
+  transform: translateY(-1px);
 }
 
 .form-feedback {
@@ -114,7 +179,6 @@
 .form-feedback.error,
 .form-feedback.success {
   opacity: 1;
-  animation: fadeInUp 0.35s ease-out;
 }
 
 .form-feedback.error {
@@ -129,9 +193,16 @@
   border: 1px solid #c82333;
 }
 
-@media (min-width: 900px) {
-	.stickers-section .stickers-content {
-		align-items: center;
-		justify-content: flex-start;
-	}
+@media (max-width: 960px) {
+  .story-grid,
+  .stickers-content,
+  .image-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .stickers-section {
+    padding: 24px;
+  }
 }
