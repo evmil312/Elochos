@@ -8,20 +8,15 @@ img {
 
 .hero {
   padding: 56px 0 24px;
-  border-radius: 42px;
-  background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 32px 90px rgba(22, 18, 14, 0.1);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top left, rgba(236, 141, 15, 0.16), transparent 25%),
-    radial-gradient(circle at 90% 10%, rgba(255, 251, 24, 0.15), transparent 18%);
-  pointer-events: none;
+  display: none;
 }
 
 .hero-copy,
